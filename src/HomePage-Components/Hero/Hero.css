@@ -1,0 +1,23 @@
+
+#h2{
+   font-family: math;
+    text-shadow: 3px 4px 2px #0b546f;
+    font-size: 75px;
+    rotate: 13deg;
+    color: rgb(88, 211, 12);
+    position: relative;
+    top: -23%;
+    left: -140%;
+}   
+#future
+{
+    background-color: #3b8ca6;
+    border-radius: 16px;
+    width: 449px;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    height: 131px;
+    left:-59%;
+    /* opacity: 0; */
+}

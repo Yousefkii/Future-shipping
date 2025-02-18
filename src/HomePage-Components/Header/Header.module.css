@@ -1,0 +1,41 @@
+
+.countainer{
+    background-color: black;
+    width: 100%;
+    margin-left: -8px;
+    margin-top: -30px;
+    margin-right: -35px;
+}
+.nav_links{
+    color: grey;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 30px;
+    position: absolute;
+    font-size: large;
+}
+.link:hover{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logopic{
+    width: 89px;
+    height: 86px;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    margin-left: 2%;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+a:hover{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+

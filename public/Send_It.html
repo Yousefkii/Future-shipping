@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Send_It.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sending_details">
+ <h1 class="sending_header">Sending Details</h1>
+ <div class="functionalty">
+    <div class="disappear">
+ <div class="sending_buttons">
+    <button class="send_buttons" id="domicticly" value="domicticly" onclick="domicticly()">domicticly</button>
+    <button class="send_buttons"  id="globaly" value="globaly" onclick="globaly()">globaly</button>
+  </div>
+</div>
+  <div id="globaly_det" hidden>
+    
+   <label id="global-drop-lab" class="address_label" style="font-size: x-large;">your continent</label>
+     <select class="contenents_cho" vlaue="",placeholder="choose the country" onchange="continent(this)" >
+       <option value="not_choice">choose your continent</option>
+       <option value="Euroupe"> Euroupe</option>
+       <option value="North America"> North America</option>
+       <option value="south America"> south America</option>
+       <option value="Africa">Africa</option>
+       <option value="Asia">Asia</option>
+     </select>
+     <div id="buttooon" >
+     <button class="ch" id="pac" onclick="package()"> package </button>
+     <button class="ch" id="docu" onclick="documents()">documents</button>
+     </div>
+  </div>
+  <button class="checking_button" onclick="fin_check()">check</button>
+    </div>
+</div>
+    <script src="JS-code.js"></script>
+</body>
+</html>

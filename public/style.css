@@ -1,0 +1,443 @@
+
+body
+{
+    counter-reset: first-counter -3;
+}
+.different_color{
+    color: gold;
+}
+
+#body-bachground-img
+{
+    background-image: url("shipping\ bg.jpg");
+    height: 300px;
+    margin-left:740px;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position: bottom;
+    margin-right: -8px;
+}
+#body-bachground-color
+{
+    background: linear-gradient(#e66465, #9198e5);
+    height: 300px;
+    width:866px;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    margin-top: -322px; 
+    margin-left: -8px;
+}
+
+/* new change */
+
+
+.yousco_services{
+    width: 100%;
+    /* height: 100vh; */
+    /* background-image: url(https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    position: relative;
+}
+.services_options_bg{
+    background-color: #d3d3d352;
+    height: 247px;
+    margin-top: -343px;
+}
+
+.services_headeer{
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+    top: -13%;
+    font-size: 78px;
+    font-family: math;
+    text-shadow: 1px 1px 2px pink;
+
+}
+.services_options{
+    position: relative;
+    top: 60%;
+    margin-left: 55px;
+    display: flex;
+}
+.opt{
+    align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-left: 145px;
+  width: 311px;
+  height: 247px;
+}
+.opt:hover{
+    box-shadow: -8px -3px 2px 4px #02020278;
+}
+
+#traking{
+    margin-top: 147px;
+}
+
+.icons{
+    position: relative;
+    top: -29%;
+    font-size: 42px;
+    left: 35%;
+}
+.TYO{
+    left: 47%;
+    position: absolute;
+}
+.fa-magnifying-glass-location{
+    position: relative;left: 0%;font-size: 50px;
+}
+.fa-truck-fast{
+    position: relative;
+    left: 27%;
+    top: -26%;
+    font-size: 50px;
+}
+.track_input{
+    position: relative;
+    width: 100%;
+    height: 596px;
+}
+
+.tracking_info_style{
+    position: absolute;
+    top: 32%;
+    left: 41%;
+}
+
+#header_tracking{
+    font-family: math;
+    text-shadow: 3px 4px 2px #0b546f;
+    font-size: 75px;
+    rotate: 13deg;
+}
+
+#tra_num{
+    width: 427px;
+    height: 37px;
+    border: none;
+    border-bottom: 4px solid black;
+    border-radius: 10px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -38px;
+}
+
+#tr_num_check{
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    width: 162px;
+    height: 75px;
+    border-radius: 15px;
+    position: absolute;
+    left: 20%;
+    /* top: 112%; */
+    margin-top: 59px;
+}
+/* new change */
+
+.magnifying-glass-location
+{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.cards-headers
+{
+    text-align: center;
+    margin-top: 62px;
+    color: gold;
+}
+#hi-body
+{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 300px
+}
+#track_num_label{
+    position: relative;
+    top: 16%;
+    left: 36%;
+}
+#tracking_number_input{
+    height: 30px;
+    position: relative;
+    top: 29%;
+    left: -3%;
+    background-color: #9198e5;
+}
+#track_button{
+    background-color: gray;
+    color: #9198e5;
+    position :relative;
+    top: 59px;
+    left: 35%;
+}
+#track_button:hover{
+    color:gray;
+    background-color: #9198e5;
+}
+#cont-but
+{
+    background-color: rgb(127, 23, 127);
+    color: rgb(143, 206, 226);
+    border-radius: 100%;
+    position:fixed ;
+    bottom: 52px;
+    right: 52px;
+    padding: 5px;
+    width: 108px;
+    height: 70px;
+    z-index: 1000;
+}
+ol li ::before
+{
+    counter-increment: first-counter;
+    content:counter(first-counter) ;
+}
+#partners_section{
+    height: 700px;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29ycG9yYXRlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D);
+    margin-top: 50px;
+}
+#countries_section{
+    margin-top: 10%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+}
+#contianer_partners{
+    display: flex;
+    background-image: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29ycG9yYXRlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D) ;
+    width: 100%;
+    height: 80%;
+    background-size: auto 100%;
+}
+.countries{
+    display: flex;
+    width: 20%;
+    position: relative;
+    height: 80%;
+    background-color: #b30c6b;
+    transition: all 0.3s ease-in-out;
+}
+.countries:hover{
+    width: 25%;
+    height: 92%;
+}
+.countries_header{
+    position: relative;
+    margin-top: 20%;
+    left: 36%;
+    font-size: xx-large;
+}
+
+#eg{
+    background-image: url(https://media.cntraveler.com/photos/655cdf1d2d09a7e0b27741b5/16:9/w_1920,c_limit/Cairo%20Egypt_GettyImages-1370918272.jpg);
+    background-size: auto 100%;
+    
+}
+#china{
+    background-image: url(https://earth.org/wp-content/uploads/2022/04/Untitled-design-2022-04-14T155317.295-1200x800.jpg);
+    image-resolution: from-image 300dpi;   
+    background-size: auto 100%;
+}
+#Germany{
+    background-size: auto 100%;
+    background-image: url(https://static.toiimg.com/photo/msid-111576967,width-96,height-65.cms);
+}
+#usa{
+    background-size: auto 100%;
+    background-image: url(https://a.travel-assets.com/findyours-php/viewfinder/images/res70/483000/483799-capitol-hill.jpg);
+}
+#brazil{
+    background-size: auto 100%;
+    background-image: url(https://t4.ftcdn.net/jpg/02/43/29/05/360_F_243290527_4MGjSbuSc9pDwsHWxrS5SwYM3T7A8Fo2.jpg);
+}
+#fingerprints{
+    text-align: center;
+    color: rgb(21 45 108);
+    position: relative;
+    top: 10%;
+}
+#our_work{
+    height: 457px;
+    margin-top: -80px;
+    width: 100%;
+    background-image: url(https://i.pinimg.com/736x/64/22/f2/6422f22981ad0a1dbaae7466e2f255da.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-mask-image: linear-gradient(to top, black 70%, transparent 100%);
+  mask-image: linear-gradient(to top, black 10%, transparent 100%);
+}
+#our_Record{
+    position: relative;
+    margin-top: 116px;
+    width: 100%;
+}
+#Record_Header{
+    position: relative;
+    left: 30%;
+    font-size: xx-large;
+
+}
+#intoAction{
+    left: 44%;
+}
+#experiance{
+    display: flex;
+    position: relative;
+    margin-top: 130px;
+    height: 300px;
+}
+.experiance_sec{
+    display: flex;
+    width: 33%;
+    height: 100%;
+}
+.experiance_header{
+    font-size: 82px;
+    position: relative;
+    left: 37%;
+    margin-top: 15px;
+
+}
+.experiance_sub_headers{
+    position: relative;
+    top: 38%;
+    left: 14%;
+    font-size: larger;
+    font-weight: bold;
+}
+.experiance_description{
+    position: relative;
+    top: 205px;
+    left: -95px;
+    font-size: larger;
+}
+#news_section{
+   width: 100%;
+   height: 700px;
+   margin-top: 30px;
+
+}
+.news_header{
+    margin-top: 6%;
+    width: 41%;
+    margin-left: 85px;
+    font-size: 33px;
+}
+#news_pic{
+    position: absolute;
+    border-radius: 47px;
+    width: 34%;
+    height: 70%;
+    left: 62%;
+    margin-top: -34%;
+    background-image: url(https://d3f3h35mrzf979.cloudfront.net/Pictures/480xany/3/2/1/81321_wettering.JPG);
+    background-size: auto 100%;
+    transition-duration: 500ms;
+}
+#scroll_up{
+    border-radius: 50%;
+    background-color: lightgrey;
+    color: black;
+    padding: 13px;
+    display: none;
+    position: fixed;
+    left: 84%;
+    bottom: 6%;
+    z-index: 1000;
+}
+#frist_group{
+    position: relative;
+    height: fit-content;
+    margin-left: 9%;
+    margin-top: 3%;
+    float: right;
+    margin-right: 248px;
+}
+.head_link{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 5px;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 30%;
+}
+.footer_links{
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 4px;
+    text-decoration: none;
+    display: flex;
+}
+#lets_talk{
+   color: white;
+
+}
+#reach{
+    position: absolute;
+    top: 226%;
+    left: 58%;
+    width: 200px;
+    height: 61px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+}
+.footer_header{
+    display: flex;
+    position: absolute;
+    left: 15%;
+    font-size: xx-large;
+    margin-top: 52px;
+}
+.footer_icons{
+    position: absolute;
+    display: flex
+;
+    flex-direction: column;
+    /* height: 300px; */
+    left: 287%;
+    top: 43%;
+    row-gap: 80px;
+    opacity: 0.6;
+
+}
+footer
+{
+    height: 500px;
+    background-color:  rgb(15 13 55);
+    width: 100%;
+}

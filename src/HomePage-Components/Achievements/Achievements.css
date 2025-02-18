@@ -1,0 +1,50 @@
+.headers{
+    text-align: center;
+}
+.third_forth{
+    font-size: large;
+    margin-top: 23px;
+}
+#first_line_h{
+    font-size: xx-large;
+}
+#second_line_h{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 2px;
+}
+#spans{
+        display: flex;
+        flex-direction: row;
+        flex-basis: fit-content;
+        width: 100%;
+        column-gap: 12%;
+        margin-left: 41px;
+}
+.record_cards{
+    display: flex;
+    text-align: center;
+    flex-basis: fit-content;
+    row-gap: 19px;
+    flex-direction: column;
+}
+.record_cards h1{
+    font-size: 62px;
+    margin-bottom: 0;
+    margin-top: 90px;
+}
+.record_cards p{
+    width: 360px;
+    font-weight: bold;
+}
+#record_background{
+    height: 457px;
+    margin-top: 0;
+    width: 100%;
+    background-image: url(https://i.pinimg.com/736x/64/22/f2/6422f22981ad0a1dbaae7466e2f255da.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-mask-image: linear-gradient(to top, black 70%, transparent 100%);
+  mask-image: linear-gradient(to top, black 10%, transparent 100%);
+}
