@@ -9,6 +9,7 @@ import News from './HomePage-Components/News/News.jsx';
 import Footer from './HomePage-Components/Footer/Footer.jsx';
 
 import Login from './Login.jsx';
+import Signup from './Signup.jsx'
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
           } 
         />
         
-        
+        <Route path ='/Signup' element ={<Signup/>}/>
         <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
