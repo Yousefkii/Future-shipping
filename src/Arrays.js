@@ -1,2 +1,2 @@
-export const UserName_data = ["youssef","osama","mark","ahmed"];
-export const Password_data = ["12345","67890,125689,34212341"];
+export let UserName_data = ["youssef","osama","mark","ahmed"];
+export let Password_data = ["12345","67890,125689,34212341"];

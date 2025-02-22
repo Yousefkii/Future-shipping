@@ -1,88 +1,101 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Signup.css'
+import {UserName_data} from './Arrays'
+import {Password_data} from './Arrays'
+import {useNavigate} from 'react-router-dom'
 
 function Signup () {
-  class SignUp {
-    constructor(Fname,Sname,USI,exampleInputEmail1,ReexampleInputEmail1,pass,Repass){
-   
-      this.first_name = Fname.value;
-      this.last_name = Sname.value;
-      this.User_name = USI.value;
-      this.Email = exampleInputEmail1.vlaue;
-      this.ConEmail = ReexampleInputEmail1.value;
-      this.password = pass.value;
-      this.Conpassword = Repass.value;
+ 
+ const navigate = useNavigate();
 
-    
+ function assigning_first_name(e){
+  setfirst_name(e.target.value)
+ }
+ function assigning_last_name(e){
+  setlast_name(e.target.value)
+ }
+ function assigning_username(e){
+  setusername(e.target.value)
+ }
+ function assigning_email(e){
+  setemail(e.target.value)
+ }
+ function assigning_confirm_email(e){
+  setconfirm_emil(e.target.value)
+ }
+ function assigning_password(e){
+  setpassword(e.target.value)
+ }
+ function assigning_confirm_password(e){
+  setconfirm_password(e.target.value)
+ }
 
-    }
-     
-    inputs(){
-       if(this.first_name === "" || this.last_name === "" || this.User_name === "" || this.Email === "" || this.ConEmail === "" || this.password === "" || this.Conpassword === ""){
-        alert("please fill all the inputs first");
-       }
+ const [first_name,setfirst_name] = useState('')
+ const [last_name,setlast_name] = useState('')
+ const [username,setusername] = useState('')
+ const [email,setemail] = useState('')
+ const [confirm_emil,setconfirm_emil] = useState('')
+ const [password,setpassword] = useState('')
+ const [confirm_password,setconfirm_password] = useState('') 
 
-       let userName_database = ["youssef","osama","mark","ahmed"];
-       let password_database = ["12345","67890,125689,34212341"];
-       
-      if (this.Email === this.ConEmail) {
-        alert("please write the same email")
-        
-      }
-      else if(this.password !== this.Conpassword){
-        alert("the password is not the same, please rewrite it")
+   function signUp_trigger(){
+      
+
+       if(first_name ==='' || last_name ==='' || username ==='' || email ==='' || confirm_emil ==='' || password ==='' || confirm_password ===''){
+        alert('please fill all the fields first')
         return;
-      }
-
-       for (let index = 0; index < userName_database.length; index++) {
-       if (userName_database[index] === this.User_name) {
-         alert("sorry that user name is taken, choose another one")
+       }       
+       else if(email !== confirm_emil){
+         alert('please enter the same email')
+         setconfirm_emil('')
          return;
        }
-       else{
-        userName_database.push(this.User_name);
-        password_database.push(this.password);
-        return;
-       }
+       else if(password !== confirm_password){
+        alert('please enter the same password')
+        setconfirm_password('')
+        return
+      }
+      UserName_data.some(ele =>{
+        if (ele === username) {
+          alert('sorry that username is taken choose another one')
+          setusername('')
+          return;
+        }
         
-       }
-    }
-}
+      })
+        AccCreacting(username,password)
+      
+   }
 
-
-
-function signUp_trigger(){
-    let first_name = document.querySelector("#Fname");
-    let last_name =  document.querySelector("#Sname");
-    let User_name =  document.querySelector("#USI");
-    let Email =  document.querySelector("#exampleInputEmail1");
-    let ConEmail =  document.querySelector("#ReexampleInputEmail1");
-    let password =  document.querySelector("#pass");
-    let Conpassword =  document.querySelector("#Repass");
-    
-     let trigger = new SignUp(first_name,last_name,User_name,Email,ConEmail,password,Conpassword)
-     trigger.inputs();
-}
+   function AccCreacting(username,password){
+    UserName_data.push(username)
+    Password_data.push(password)
+    alert('data have been saved')
+    navigate('/Login')
+   }
+   
 
   return (
     <div className >
         <div id="sign_up_area">
+          
             <div className="input-group">
-            <input type="text" aria-label="First name" className="form-control" id="Fname" placeholder="First Name"/>
-            <input type="text" aria-label="Last name" className="form-control" id="Sname" placeholder="Last Name"/>
+            <input type="text"  className={'form_control'.toString()} id="Fname" value={first_name} onChange={assigning_first_name} placeholder="First Name"/>
+            <input type="text"  className={'form_control'.toString()} id="Sname" value={last_name} onChange={assigning_last_name} placeholder="Last Name"/>
           </div>
-            <input type="text" aria-label="First name" className="form-control" id="USI" placeholder="User Name"/>
-            <input type="email" className="form-control" id="exampleInputEmail1" placeholder="Your email"/>
-            <input type="email" className="form-control" id="ReexampleInputEmail1" placeholder="Rewrite email"/>
-            <input type="password" className="form-control" id="pass" placeholder="Set your password"/>
-            <input type="password" className="form-control" id="Repass" placeholder="Rewrite password"/>
-            <button className="create_acc" onClick={signUp_trigger}>
+            <input type="text"  className={'form_control'.toString()} id="USI" value={username} onChange={assigning_username} placeholder="User Name"/>
+            <input type="email" className={'form_control'.toString()} id="exampleInputEmail1" value={email} onChange={assigning_email} placeholder="Your email"/>
+            <input type="email" className ={'form_control'.toString()} id="ReexampleInputEmail1" value={confirm_emil} onChange={assigning_confirm_email} placeholder="Rewrite email"/>
+            <input type="password" className={'form_control'.toString()} id="pass" value={password} onChange={assigning_password} placeholder="Set your password"/>
+            <input type="password" className={'form_control'.toString()} id="Repass" value={confirm_password} onChange={assigning_confirm_password} placeholder="Rewrite password"/>
+            <button className={'create_acc'.toString()} onClick={signUp_trigger}>
                 Create an account
             </button>
+            
         </div>
         
     </div>
   )
 }
 
-export default Signup
+export default Signup  
