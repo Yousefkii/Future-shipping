@@ -76,7 +76,7 @@ function Signup () {
    
 
   return (
-    <div className >
+    <div className='bod' >
         <div id="sign_up_area">
           
             <div className="input-group">
